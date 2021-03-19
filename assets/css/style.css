@@ -18,7 +18,7 @@ a {
 }
 
 a:hover {
-  color: #dd5a92;
+  color: #494949;
   text-decoration: none;
 }
 
@@ -375,6 +375,18 @@ section {
 .section-bg {
   background: linear-gradient(180deg, #f2f6f9 0%, #fff 100%);
 }
+.section-shadow {
+  box-shadow: 0px 7px 20px 12px rgb(88 98 125 / 26%);
+}
+
+.education_padding{
+  background-color: #e1e5ea;
+  padding: 23px 0px 23px 22px;
+}
+
+.education-padding_1{
+  padding: 23px 0px 23px 22px;
+}
 
 .section-title {
   padding-bottom: 30px;
@@ -490,7 +502,6 @@ section {
 }
 
 .about .content .count-box p {
-  padding: 15px 0 0 0;
   margin: 0 0 0 50px;
   font-family: "Playfair Display", serif;
   font-size: 14px;
@@ -535,6 +546,15 @@ section {
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
+
+.skills {
+ background: url("../img/fondo_skills.jpeg") center center;
+}
+.skills .container {
+  background-color: rgba(255, 255, 255, .9);
+  padding: 22px 40px;
+}
+
 .skills .progress {
   height: 50px;
   display: block;
@@ -635,8 +655,8 @@ section {
   padding: 20px 15px;
   position: relative;
   overflow: hidden;
-  background: #fff;
-  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.2);
+  background: #272727;
+  box-shadow: 0px 0px 20px 8px rgb(88 98 125 / 26%);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
   text-align: center;
@@ -654,11 +674,6 @@ section {
   z-index: -1;
 }
 
-.services .icon-box:hover::before {
-  background: #136112;
-  height: 100%;
-  border-radius: 0px;
-}
 
 .services .icon {
   margin: 0 auto 30px auto;
@@ -678,37 +693,78 @@ section {
   color: #fff;
 }
 
-.services .title {
+.services .title_01 {
+  color: #64a19d !important;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.services .title a {
-  color: #111;
+.services .title_02 {
+  color: #8aad89 !important;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.services .title_03 {
+  color: #b57ba7  !important;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .services .description {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
+  color: #ffffff;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.services .icon-box:hover .title a, .services .icon-box:hover .description {
-  color: #fff;
+.services .description_1 {
+  font-size: 13px;
+  line-height: 24px;
+  margin: 5px 0px 0px 0px;
+  color: #ffffff;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.services .icon-box:hover .icon {
-  background: #fff;
+.text_left {
+  text-align: left;
 }
 
-.services .icon-box:hover .icon i {
-  color: #136112;
-}
 
 @media (max-width: 768px) {
   .services .icon-box::before {
     bottom: 60%;
+  }
+}
+
+@media (min-width: 992px){
+  .hr_formation_01 {
+    border-color: #64a19d;
+    border-width: 0.25rem;
+    width: 30%;
+  }
+}
+
+@media (min-width: 992px){
+  .hr_formation_02 {
+    border-color: #8aad89;
+    border-width: 0.25rem;
+    width: 30%;
+  }
+}
+
+@media (min-width: 992px){
+  .hr_formation_03 {
+    border-color: #b57ba7;
+    border-width: 0.25rem;
+    width: 30%;
   }
 }
 
@@ -1057,17 +1113,25 @@ section {
   color: #5a656e;
 }
 
-.contact .info i {
+.info div {
+  text-align: left;
+}
+
+.contact .div {
+  display: flex;
+}
+
+.info div i {
   font-size: 32px;
   color: #136112;
   float: left;
   line-height: 1;
 }
 
-.contact .info p {
+.info p {
   padding: 0 0 10px 42px;
   line-height: 28px;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .contact .php-email-form .validate {
@@ -1159,6 +1223,68 @@ section {
   100% {
     transform: rotate(360deg);
   }
+}
+/*--------------------------------------------------------------
+# Contacto_2
+--------------------------------------------------------------*/
+
+.page-section {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  background-color: #1f674c47;
+}
+
+.section-heading {
+  text-transform: uppercase;
+}
+
+.section-heading .section-heading-upper {
+  display: block;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.section-heading .section-heading-lower {
+  display: block;
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.intro {
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  .intro .intro-img {
+    width: 75%;
+    float: right;
+  }
+  .intro .intro-text {
+    left: 0;
+    width: 60%;
+    margin-top: 3rem;
+    position: absolute;
+  }
+  .intro .intro-text .intro-button {
+    width: 100%;
+    left: 0;
+    position: absolute;
+    bottom: -2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro .intro-text {
+    width: 45%;
+  }
+}
+
+.intro .intro-text {
+  background-color: rgba(255, 255, 255, .85);
+}
+
+.margin-servicios {
+  margin: 0px 0px 32px 0px;
 }
 
 /*--------------------------------------------------------------
