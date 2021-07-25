@@ -522,11 +522,11 @@ section {
   color: #6b96be;
 }
 
-.about .image {
-  background: url("../img/esther.JPG") center center no-repeat;
-  background-size: cover;
-  min-height: 400px;
-}
+/*.about .image {*/
+/*  background: url("../img/esther.JPG") center center no-repeat;*/
+/*  background-size: cover;*/
+/*  min-height: 400px;*/
+/*}*/
 
 @media (max-width: 991px) {
   .about .image {
