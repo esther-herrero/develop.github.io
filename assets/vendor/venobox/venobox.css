@@ -249,6 +249,11 @@ user-select: none;
     transition: margin 300ms ease-out;
 }
 
+.owl-carousel .owl-item img {
+  height: 58vh;
+    width: auto !important;
+}
+
 /* ---------- preloader ----------
  * SPINKIT 
  * http://tobiasahlin.com/spinkit/
