@@ -569,6 +569,11 @@ section {
   border-color: #136112;
 }
 
+.img_esther_radius {
+    border-radius: 20px;
+    box-shadow: -9px 3px 20px 0 rgba(20, 20, 20, 0.3);
+}
+
 .padding-CV {
   padding-bottom: 10px;
   padding-left: 10px;
