@@ -1462,6 +1462,13 @@ section {
   margin: 0px 0px 32px 0px;
 }
 
+@media (max-width: 991px) {
+  .margin-servicios {
+   margin: 0px;
+  }
+}
+
+
 .bx-link:hover, .bx:hover {
   color: rgba(161, 208, 213, 0.44) ;
 }
