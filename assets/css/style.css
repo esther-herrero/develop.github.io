@@ -570,8 +570,8 @@ section {
 }
 
 .img_esther_radius {
-    border-radius: 20px;
-    box-shadow: -9px 3px 20px 0 rgba(20, 20, 20, 0.3);
+  border-radius: 20px;
+  box-shadow: -9px 3px 20px 0 rgba(20, 20, 20, 0.3);
 }
 
 .padding-CV {
@@ -831,6 +831,114 @@ section {
     border-color: #b57ba7;
     border-width: 0.25rem;
     width: 30%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Idiomas
+--------------------------------------------------------------*/
+
+.idiomas_container {
+  display: flex;
+}
+
+.idiomas {
+  height: 29vh;
+}
+
+.services1 .icon-box {
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 15px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.2);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  text-align: center;
+  z-index: 1;
+}
+
+.services1 .icon-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  transition: ease-in-out 0.3s;
+  z-index: -1;
+}
+
+.services1 .icon-box:hover::before {
+  background: #136112;
+  height: 100%;
+  border-radius: 0px;
+}
+
+.services1 .icon {
+  margin: 0px 14px 5px 5px;
+  padding-top: 10px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: #136112;
+  transition: all 0.3s ease-in-out;
+}
+
+.services1 .icon i {
+  font-size: 36px;
+  line-height: 1;
+  color: #fff;
+}
+
+.services1 .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.services1 .title a {
+  color: #111;
+}
+
+.services1 .description {
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.services1 .icon-box:hover .title a,
+.services1 .icon-box:hover .description {
+  color: #fff;
+}
+
+.services1 .icon-box:hover .icon {
+  background: #fff;
+}
+
+.services1 .icon-box:hover .icon i {
+  color: #136112;
+}
+
+@media (max-width: 768px) {
+  .services1 .icon-box::before {
+    bottom: 60%;
+  }
+  .idiomas_vol {
+    height: 39vh;
+  }
+
+  .idiomas_vol_con {
+    height: 35vh !important;
+  }
+  .services1 .icon {
+    width: 100px;
   }
 }
 
