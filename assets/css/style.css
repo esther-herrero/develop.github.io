@@ -846,6 +846,28 @@ section {
   height: 29vh;
 }
 
+.idiomas_vol_con {
+  height: 227px !important;
+}
+
+@media (max-width: 768px) {
+  .services1 .icon-box::before {
+    bottom: 60%;
+  }
+  .idiomas_vol {
+    height: 37vh;
+  }
+  .idiomas_vol_con {
+    height: 260px !important;
+  }
+  .services1 .icon {
+    width: 100px;
+  }
+  .contacto_padding {
+    padding: 40px 20px 20px 20px !important;
+  }
+}
+
 .services1 .icon-box {
   height: 25vh;
   display: flex;
@@ -926,21 +948,6 @@ section {
   color: #136112;
 }
 
-@media (max-width: 768px) {
-  .services1 .icon-box::before {
-    bottom: 60%;
-  }
-  .idiomas_vol {
-    height: 39vh;
-  }
-
-  .idiomas_vol_con {
-    height: 35vh !important;
-  }
-  .services1 .icon {
-    width: 100px;
-  }
-}
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -1464,7 +1471,7 @@ section {
 
 @media (max-width: 991px) {
   .margin-servicios {
-   margin: 0px;
+    margin: 0px;
   }
 }
 
