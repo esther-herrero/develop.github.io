@@ -850,6 +850,10 @@ section {
   height: 227px !important;
 }
 
+.section_padding {
+  padding-bottom: 140px;
+}
+
 @media (max-width: 768px) {
   .services1 .icon-box::before {
     bottom: 60%;
