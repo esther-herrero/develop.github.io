@@ -44,7 +44,7 @@
 
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex flex-column align-items-center justify-content-center">
-  <h2> Hi, I'm Esther R. Herrero! </h2>
+  <h2> Hi, I'm Esther Rguez Herrero! </h2>
   <h1> < I am a Front-end Developer Junior > <br> html, css, javaScript y react </h1>
   <!--  <h1> I am a Front-end Developer (React) </h1>-->
   <h4> Ravenclaw, Illustrator, Traveller and Dancer </h4>
@@ -136,9 +136,29 @@
             </div>
           </div><!-- End .content-->
         </div>
-        <a class="dowland_cv" href="assets/CV_front_developer_Esther_Rguez_Herrero.pdf" download="CV_front_developer_Esther_Rguez_Herrero">
-          <button type="button" class="btn btn-info btn-descarga"> Descargar CV</button>
-        </a>
+
+        <div class="dowland_cv_container">
+          <a class="dowland_cv" href="assets/CV_front_developer_Esther_Rguez_Herrero.pdf" download="CV_front_developer_Esther_Rguez_Herrero">
+            <button type="button" class="btn btn-info btn-descarga"> Descargar CV en PDF</button>
+          </a>
+
+          <button type="button" class="btn btn-info btn-descarga" onclick="downloadImages()">Descargar CV en Imágenes</button>
+
+          <script>
+            function downloadImages() {
+              const images = ['assets/CV_front_developer_Esther_Rguez_Herrero_1.png', 'assets/CV_front_developer_Esther_Rguez_Herrero_2.jpg'];
+
+              images.forEach(imageUrl => {
+                const link = document.createElement('a');
+                link.href = imageUrl;
+                link.download = imageUrl.split('/').pop(); // obtiene el nombre del archivo de la URL
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              });
+            }
+          </script>
+        </div>
       </div>
 
     </div>
